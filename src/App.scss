@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #71b9e7;
+}
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding-top: 75px;
+  background: #ccc;
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+}
+.pic-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  .pic-pig {
+    position: absolute;
+    top: 125px;
+  }
+  .pic-phone {
+    position: absolute;
+  }
+  .pic-book {
+    position: absolute;
+    top: 204px;
+  }
+  margin-bottom: 600px;
+}
