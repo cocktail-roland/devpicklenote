@@ -40,7 +40,6 @@ const App=()=> {
 
   return (
     <div className={isBlurred ? "blur" :"app"} onClick={handleClick}>
-      {/* <div className="item" data-aos="fade-up">1</div> */}
       <div className="header navy">
             <span className="bold">P2P</span>투자를 기록하는 가계부, 피클노트
       </div>
@@ -67,7 +66,7 @@ const App=()=> {
             나만의 투자 가계부를 가장 먼저 만나보세요.
           </span>
           <div className="under-yellow-bar"></div>
-          <div className="mouse" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-delay="1500">
+          <div className="mouse">
             <div className="mouse-dot"></div>
           </div>
         </div>
@@ -83,39 +82,42 @@ const App=()=> {
       </div> */}
       <div className="block3">
         <div className="pickle-image-container1">
-            <img className="pic-back" alt="" width="396px" height="660px" src={PickleBack1} data-aos-easing='ease' data-aos-delay="300" data-aos="fade-up"></img>
-            <img className="pic-front1" alt="" width="560px" height="106px" src={PickleFront1} data-aos="fade-zoom-in"></img>
-            <img className="pic-front2" alt="" width="432px" height="290px" src={PickleFront2} data-aos-delay="500" data-aos="zoom-in"></img>
-            <div className="text-div" data-aos="fade-left" data-aos-delay="1000">
+            <img className="pic-back" alt="" width="396px" height="660px" src={PickleBack1} data-aos-easing='ease' data-aos="fade-up"></img>
+            <img className="pic-front1" alt="" width="560px" height="106px" src={PickleFront1} data-aos-delay="300" data-aos="fade-zoom-in"></img>
+            <img className="pic-front2" alt="" width="432px" height="290px" src={PickleFront2} data-aos-delay="600" data-aos="zoom-in"></img>
+            <div className="text-div" data-aos="fade-left" data-aos-delay="1500">
               <div className="under-green-bar1"></div>
-              <span className="pickle01 navy">Pickle 01</span><br></br>
-          <span className="pickle1-title">흩어진 <span className="bold montserrat-big">P2P</span>내역을 모아담다.</span><br></br>
-          <span className="pickle1-subtext">다수의 플랫폼에 분산투자되어 보기 어려웠던<br></br>
-          내역들을 피클로 한번에 정리해서 보세요!</span></div>
+              <span className="pickle-sub-title navy">Pickle 01</span><br></br>
+              <span className="pickle-big-text">흩어진 <span className="bold montserrat-big">P2P</span>내역을 모아담다.</span><br></br>
+              <span className="pickle1-subtext">다수의 플랫폼에 분산투자되어 보기 어려웠던<br></br>
+              내역들을 피클로 한번에 정리해서 보세요!</span>
+            </div>
         </div>
       </div>
       <div className="block4">
         <div className="pickle-image-container2">
-            <img className="pic-back" alt="" width="396px" height="660px" src={Pickle2Back} data-aos-easing='ease' data-aos-delay="300" data-aos="fade-up"></img>
-            <img className="pic-front1" alt="" width="432px" height="290px" src={Pickle2Front} data-aos-delay="500" data-aos="zoom-in"></img>
-            <div className="text-div" data-aos="fade-right" data-aos-delay="1000">
+          <img className="pic-back" alt="" width="396px" height="660px" src={Pickle2Back} data-aos-easing='ease' data-aos-delay="300" data-aos="fade-up"></img>
+          <img className="pic-front1" alt="" width="432px" height="290px" src={Pickle2Front} data-aos-delay="500" data-aos="zoom-in"></img>
+          <div className="text-div" data-aos="fade-right" data-aos-delay="1000">
             <div className="under-green-bar2"></div>
-            <span className="pickle01 navy">Pickle 02</span><br></br>
-          <span className="pickle1-title">투자도 지출이죠,</span><br></br>
-          <span className="pickle1-subtext">내가 투자한 내역을 기록하면 돈의 흐름을 놓치지 않고<br></br>
-          빠짐 없이 가계부를 정리할 수 있어요.</span></div>
+            <span className="pickle-sub-title navy">Pickle 02</span><br></br>
+            <span className="pickle-big-text">투자도 지출이죠,</span><br></br>
+            <span className="pickle1-subtext">내가 투자한 내역을 기록하면 돈의 흐름을 놓치지 않고<br></br>
+            빠짐 없이 가계부를 정리할 수 있어요.</span>
+          </div>
         </div>
       </div>
       <div className="block5">
-        <div className="pickle-image-container1">
-            <img className="pic-back" alt="" width="396px" height="660px" src={Pickle3Back} data-aos-easing='ease' data-aos-delay="300" data-aos="fade-up"></img>
-            <img className="pic-front1" alt="" width="432px" height="236px" src={Pickle3Front} data-aos="fade-zoom-in"></img>
+        <div className="pickle-image-container3">
+            <img className="pic-back" alt="" width="396px" height="660px" src={Pickle3Back} data-aos-easing='ease' data-aos="fade-up"></img>
+            <img className="pic-front" alt="" width="432px" height="236px" src={Pickle3Front} data-aos-delay="300"data-aos="fade-zoom-in"></img>
             <div className="text-div" data-aos="fade-left" data-aos-delay="1000">
-            <div className="under-green-bar3"></div>
-              <span className="pickle01 navy">Pickle 03</span><br></br>
-          <span className="pickle1-title">이자는 수입입니다.</span><br></br>
-          <span className="pickle1-subtext">여기저기 흩어져 있던 상환금들을 월별로 모아보고<br></br>
-          들어올 수입을 놓치지 마세요.</span></div>
+              <div className="under-green-bar"></div>
+              <span className="pickle-sub-title navy">Pickle 03</span><br></br>
+              <span className="pickle-big-text">이자는 수입입니다.</span><br></br>
+              <span className="pickle1-subtext">여기저기 흩어져 있던 상환금들을 월별로 모아보고<br></br>
+              들어올 수입을 놓치지 마세요.</span>
+            </div>
         </div>
       </div>
       <div className="block6">
